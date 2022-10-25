@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+		CIS213 Unit 1, Graded Exercise 1 
+		Author: Andre' Preston Jr
+		Date: 1/31/2021
+	-->
+	<meta charset="utf-8" />
+	<meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+	<title>Unit 1 Graded Exercise 1</title>
+	<link rel="stylesheet" href="styles.css" />
+	<script src="Modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>
+		  Andre' Preston Jr, Graded Exercise 1
+		 </h1>
+	</header>
+	
+	<article>
+		<h2>Shipping Address</h2>
+		<form>
+			<fieldset id="addroptions">
+				<legend><span>Choose an address</span></legend>
+				<label for="homeoption" id="homeaddr">
+					<span>home</span><br/>
+					1 Main St.<br />
+					Sicilia, MA 02103
+					<input type="radio" id="homeoption" name="shippingaddr"
+						onclick="homeClicked()" />	
+					</label>
+					<label for="workoption" id="workaddr">
+						<span>work</span><br/>
+						15 Columbine Ln.<br />
+						Crab City, MA 02104
+						<input type="radio" id="workoption" name="shippingaddr"
+						onclick="workClicked()" />
+					</label>
+				</fieldset>
+					<fieldset id="contractinfo">
+						<label for="streetinput">
+							Street Address
+							<input type="text" id="streetinput" />
+						  </label>
+						  <label for="cityinput">
+							City
+							<input type="text" id="cityinput" />
+						 </label>
+						 <label for="stateinput">
+							State
+						 <label type="text" id="stateinput" />
+						</label>
+						<label for="zipinput">
+							Zip
+						<input type="text" id="zipinput" />
+						</label>
+					 </fieldset>
+				</form>
+				</article>
+			</body>
+			</html>
+				<script>
+					function homeClicked () {
+					document.getElementById('streetinput').value = '1 Main St.';
+						document.getElementById('cityinput').value = 'Sicilia';
+						document.getElementById('stateinput').value = 'MA';
+						document.getElementById('zipinput').value = '02103';
+						var homeMsg = "You selected the home address";
+						alert(homeMsg);
+					}
+						
+					function workClicked () {
+					document.getElementById('streetinput').value = '15 Columbine Ln.';
+						document.getElementById('cityinput').value = 'Crab City';
+						document.getElementById('stateinput').value = '	MA';
+						document.getElementById('zipinput').value = '02104';
+						var workMsg = "You selected the work address";
+						alert(workMsg);
+					}
+				</script>
+						
+						
+				
+					
+		

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      CIS213 Unit 3, Graded exercise 1
+      Author: <Andre' Preston Jr> 
+      Date:   <02/14/2021>
+	-->
+		<meta charset="utf-8"	/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Unit 3 graded exercise 1</title>
+</head>
+<body>
+	<header>
+		<h1>
+			Andre Preston Jr, Unit 3 graded excersise 1
+		
+		</h1>
+	</header>
+	<span id="timerParagraph"></span>
+</body>
+<script>
+
+	var timerDisplay = document.getElementById("timerParagraph");
+	var currenttimer = 0;
+	
+	function timeStart(){	
+	    currenttimer = currenttimer + 1;
+		console.log(currenttimer);
+		timerDisplay.innerHTML = currenttimer;
+		
+	}
+	
+	
+	function startTimer() {
+		setInterval(timeStart, 1000);
+	} 
+	
+	if (window.addEventListener) {
+		window.addEventListener("load", startTimer, false);
+	}
+	else if (window.attachEvent) {
+		window.attachEvent("onload", startTimer);
+	}
+</script>
